@@ -10,15 +10,18 @@ class Node{
 	}
 }
 public class StackLinkedList {
+	
 	Node head;
 	int size;
 	public StackLinkedList() {
 		head = null;
 		size = 0;
 	}
+	
 	int size() {
 		return size;
 	}
+	
 	boolean isEmpty() {
 		return head == null;
 	}
@@ -29,6 +32,7 @@ public class StackLinkedList {
 		head = temp;
 		size++;
 	}
+	
 	int pop() {
 		if(isEmpty() == true) {
 			return Integer.MAX_VALUE;
